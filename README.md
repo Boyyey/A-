@@ -58,7 +58,6 @@ let transformer = create_transformer(
 ```bash
 # Clone and build
 git clone https://github.com/boyyey/A-sharp
-cd ash-compiler
 .\build_complete.bat
 
 # Compile your first A# program
