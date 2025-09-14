@@ -55,7 +55,7 @@ let transformer = create_transformer(
 ### **Quick Start**
 ```bash
 # Clone and build
-git clone https://github.com/your-repo/ash-compiler
+git clone https://github.com/boyyey/A-sharp
 cd ash-compiler
 .\build_complete.bat
 
