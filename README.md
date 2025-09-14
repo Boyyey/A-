@@ -329,8 +329,7 @@ MIT License - See LICENSE file for details.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/ash-compiler
-cd ash-compiler
+git clone https://github.com/boyyey/A-sharp
 
 # Build everything
 .\build_complete.bat
