@@ -793,6 +793,32 @@ bool check_block_ownership(const ASTNode* expr, TypeContext* ctx) {
     return true;
 }
 
+// Missing function implementations
+bool typecheck_type_declaration(const ASTNode* decl, TypeContext* ctx) {
+    // TODO: Implement type declaration checking
+    return true;
+}
+
+bool typecheck_enum_declaration(const ASTNode* decl, TypeContext* ctx) {
+    // TODO: Implement enum declaration checking
+    return true;
+}
+
+bool typecheck_struct_declaration(const ASTNode* decl, TypeContext* ctx) {
+    // TODO: Implement struct declaration checking
+    return true;
+}
+
+bool typecheck_trait_declaration(const ASTNode* decl, TypeContext* ctx) {
+    // TODO: Implement trait declaration checking
+    return true;
+}
+
+bool typecheck_actor_declaration(const ASTNode* decl, TypeContext* ctx) {
+    // TODO: Implement actor declaration checking
+    return true;
+}
+
 // Stub implementations for remaining functions
 TypeVar* create_type_var(const char* name, Type* constraint) { return NULL; }
 void add_type_var(TypeContext* ctx, TypeVar* var) {}

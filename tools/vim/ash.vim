@@ -90,3 +90,39 @@ setlocal foldlevelstart=1
 
 " Error highlighting
 let g:ash_error_highlight = 1
+ 
+if exists("b:current_syntax") 
+  finish 
+endif 
+ 
+syn keyword ashKeyword fn mod struct enum trait impl actor message 
+syn keyword ashKeyword let mut if else match for while loop break continue 
+syn keyword ashKeyword return use pub priv static const 
+syn keyword ashKeyword true false null 
+ 
+syn keyword ashType i32 i64 f32 f64 bool String Vec Option Result 
+syn keyword ashType Tensor Model NeuralNetwork Optimizer 
+ 
+syn keyword ashEffect Pure IO Resource Concurrency 
+ 
+syn match ashComment "//.*$" 
+syn region ashComment start="/\*" end="\*/" 
+ 
+syn region ashString start=+"+ end=+"+ 
+ 
+syn match ashNumber "\<[0-9]\+\>" 
+syn match ashNumber "\<[0-9]\+\.[0-9]\+" 
+ 
+syn match ashOperator "[+\-*/=<>!&|^]" 
+syn match ashOperator "->" 
+syn match ashOperator "@" 
+ 
+hi def link ashKeyword Keyword 
+hi def link ashType Type 
+hi def link ashEffect Special 
+hi def link ashComment Comment 
+hi def link ashString String 
+hi def link ashNumber Number 
+hi def link ashOperator Operator 
+ 
+let b:current_syntax = "ash" 

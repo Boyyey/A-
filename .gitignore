@@ -1,0 +1,29 @@
+# A# Project .gitignore 
+# Compiled executables 
+*.exe 
+*.dll 
+*.so 
+*.dylib 
+ 
+# Object files 
+*.o 
+*.obj 
+ 
+# Build output 
+build/output/* 
+build/logs/* 
+ 
+# IDE files 
+.vscode/ 
+.idea/ 
+*.swp 
+*.swo 
+ 
+# OS files 
+Thumbs.db 
+.DS_Store 
+ 
+# User projects 
+projects/examples/*.ash 
+projects/ai/*.ash 
+!projects/examples/hello_world.ash 

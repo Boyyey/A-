@@ -222,6 +222,14 @@ bool typecheck_actor_declaration(const ASTNode* decl, TypeContext* ctx);
 bool check_ownership_rules(const ASTNode* expr, TypeContext* ctx);
 bool check_borrowing_rules(const ASTNode* expr, TypeContext* ctx);
 bool check_lifetime_rules(const ASTNode* expr, TypeContext* ctx);
+
+// Ownership checking helper functions
+bool check_let_ownership(const ASTNode* stmt, TypeContext* ctx);
+bool check_assign_ownership(const ASTNode* expr, TypeContext* ctx);
+bool check_move_ownership(const ASTNode* expr, TypeContext* ctx);
+bool check_borrow_ownership(const ASTNode* expr, TypeContext* ctx);
+bool check_call_ownership(const ASTNode* expr, TypeContext* ctx);
+bool check_block_ownership(const ASTNode* expr, TypeContext* ctx);
 bool check_move_semantics(const ASTNode* expr, TypeContext* ctx);
 
 // Region inference

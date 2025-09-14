@@ -50,7 +50,14 @@ typedef enum {
     NODE_MUT_REF_PATTERN,
     NODE_OWNED_PATTERN,
     NODE_EFFECTS,
-    NODE_REGION_ANNOTATION
+    NODE_REGION_ANNOTATION,
+    // Ownership and borrowing nodes
+    NODE_REF,
+    NODE_MUT_REF,
+    NODE_DEREF,
+    NODE_MOVE,
+    NODE_BORROW,
+    NODE_ASSIGN
 } ASTNodeType;
 
 typedef struct ASTNode ASTNode;
@@ -83,6 +90,11 @@ struct ASTNode {
             ASTNode* effects;
             ASTNode* body;
         } function;
+        
+        struct {
+            char* name;
+            ASTNode* type_expr;
+        } parameter;
         
         struct {
             char* name;
