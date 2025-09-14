@@ -1,5 +1,7 @@
 # A# Compiler - Complete Implementation
 
+<img width="512" height="512" alt="A# Logo with a white background" src="https://github.com/user-attachments/assets/b1cbd48d-126f-4859-b85f-ecd3abb94777" />
+
 ## 🚀 **INSANE ML/AI Language with Formal Verification**
 
 A# is a **revolutionary compiled language** that combines:
